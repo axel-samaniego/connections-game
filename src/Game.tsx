@@ -32,8 +32,6 @@ const Game = ({ gameData }: { gameData: GameData }) => {
       if (selected.length === 4) return;
       setSelected([...selected, value]);
       setSubmitLocked(false);
-      setShakeWords(true);
-      setTimeout(() => setShakeWords(false), 500); // Reset after animation
     }
   };
 
@@ -82,6 +80,8 @@ const Game = ({ gameData }: { gameData: GameData }) => {
     } else {
       setSubmitLocked(true);
       setMistakesLeft((n) => n - 1);
+      setShakeWords(true);
+      setTimeout(() => setShakeWords(false), 500); // Reset after animation
     }
   };
 
