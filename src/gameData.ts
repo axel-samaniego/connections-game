@@ -6,24 +6,23 @@ export interface GameData {
 }
 
 export const gameData: GameData = {
-  words: [
-    "Beautiful",
-    "Angel",
+  words: [ "Canes",
     "Princess",
-    "Girl",
-    "Fingers",
-    "Pillow",
-    "Burrito",
-    "Pyjama",
-    "Chopsticks",
-    "Donut",
-    "Popcorn",
-    "Canada",
-    "Fork",
-    "Spoon",
-    "Bed",
-    "Lamp",
-  ],
+    "Love",
+    "Chinese",
+    "Omakase",
+    "Angel",
+    "Smash",
+    "Obsession",
+    "Pancakes",
+    "Lucky",
+    "Szechuan",
+    "Titayas",
+    "Adoration",
+    "Korean",
+    "Beautiful",
+    "Girl"
+    ],
   groups: [
     {
       description: "Good Morning Text",
@@ -31,19 +30,19 @@ export const gameData: GameData = {
       words: ["Beautiful", "Angel", "Princess", "Girl"],
     },
     {
-      description: "Utensils",
+      description: "Our Favorite Cuisines",
       className: "medium",
-      words: ["Fork", "Spoon", "Chopsticks", "Fingers"],
+      words: ["Omakase", "Szechuan", "Chinese", "Korean"],
     },
     {
-      description: "Things found in a bedroom",
+      description: "Our First Meetings",
       className: "hard",
-      words: ["Pillow", "Pyjama", "Bed", "Lamp"],
+      words: ["Smash", "Titayas", "Canes", "Napping"],
     },
     {
-      description: "Ones that don't fit the rest",
+      description: "How I Feel About You",
       className: "tricky",
-      words: ["Shoe", "Ball", "Door", "Canada"],
+      words: ["Obsession", "Love", "Adoration", "Lucky"],
     },
   ],
 };
