@@ -14,6 +14,8 @@ const initialSelected: string[] = [];
 
 const Game = ({ gameData }: { gameData: GameData }) => {
   const [remainingWords, setRemainingWords] = useState(gameData.words);
+  const [shakeWords, setShakeWords] = useState(false);
+
 
   // used to prevent double submission
   const [submitLocked, setSubmitLocked] = useState(false);
@@ -30,6 +32,8 @@ const Game = ({ gameData }: { gameData: GameData }) => {
       if (selected.length === 4) return;
       setSelected([...selected, value]);
       setSubmitLocked(false);
+      setShakeWords(true);
+      setTimeout(() => setShakeWords(false), 500); // Reset after animation
     }
   };
 
@@ -78,7 +82,6 @@ const Game = ({ gameData }: { gameData: GameData }) => {
     } else {
       setSubmitLocked(true);
       setMistakesLeft((n) => n - 1);
-      onDeselectAll();
     }
   };
 
@@ -97,6 +100,7 @@ const Game = ({ gameData }: { gameData: GameData }) => {
           selected={selected}
           solvedGroupData={solvedGroupData}
           toggleSelected={toggleSelected}
+          shakeWords={shakeWords}
         />
 
         {solvedGroups.length < 4 ? (

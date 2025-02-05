@@ -10,6 +10,7 @@ type BoardProps = {
   selected: string[];
   toggleSelected: (value: string) => void;
   solvedGroupData: WordGroup[];
+  shakeWords: boolean;
 };
 
 const Board = ({
@@ -17,6 +18,7 @@ const Board = ({
   selected,
   solvedGroupData,
   toggleSelected,
+  shakeWords
 }: BoardProps) => {
   const [parent] = useAutoAnimate({ duration: 400 });
 
@@ -32,6 +34,7 @@ const Board = ({
             toggleSelected(word);
           }}
           selected={selected.includes(word)}
+          shouldShake={shakeWords && selected.includes(word)}
         >
           {word}
         </Item>
