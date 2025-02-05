@@ -5,7 +5,7 @@ import { gameData } from "./gameData.ts";
 function App() {
   return (
     <>
-      <h1>Connections Game</h1>
+      <h1>Cat Connections</h1>
       <div>
         <Game gameData={gameData} />
       </div>
