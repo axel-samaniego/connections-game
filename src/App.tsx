@@ -12,15 +12,9 @@ function App() {
       <br />
       <br />
       <p className="foot-disclaimer">
-        Original game here:{" "}
-        <a href="https://www.nytimes.com/games/connections">
-          NY Times Connections
-        </a>
-        .<br />
-        made by <a href="https://github.com/wheeler">@wheeler</a> while very
-        rusty.
+        Made for my beautiful angel princess girl.
         <br />
-        Created as an exercise. I claim no ownership.
+        Meow
       </p>
     </>
   );

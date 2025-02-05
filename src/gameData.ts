@@ -7,10 +7,10 @@ export interface GameData {
 
 export const gameData: GameData = {
   words: [
-    "Taco",
-    "Shoe",
-    "Ball",
-    "Door",
+    "Beautiful",
+    "Angel",
+    "Princess",
+    "Girl",
     "Fingers",
     "Pillow",
     "Burrito",
@@ -26,9 +26,9 @@ export const gameData: GameData = {
   ],
   groups: [
     {
-      description: "Foods",
+      description: "Good Morning Text",
       className: "easy",
-      words: ["Taco", "Donut", "Popcorn", "Burrito"],
+      words: ["Beautiful", "Angel", "Princess", "Girl"],
     },
     {
       description: "Utensils",
