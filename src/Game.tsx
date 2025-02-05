@@ -78,6 +78,7 @@ const Game = ({ gameData }: { gameData: GameData }) => {
     } else {
       setSubmitLocked(true);
       setMistakesLeft((n) => n - 1);
+      onDeselectAll();
     }
   };
 

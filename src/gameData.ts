@@ -37,7 +37,7 @@ export const gameData: GameData = {
     {
       description: "Our First Meetings",
       className: "hard",
-      words: ["Smash", "Titayas", "Canes", "Napping"],
+      words: ["Smash", "Titayas", "Canes", "Pancakes"],
     },
     {
       description: "How I Feel About You",
