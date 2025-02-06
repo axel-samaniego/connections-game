@@ -130,7 +130,7 @@ const Game = ({ gameData }: { gameData: GameData }) => {
           <>
             <br />
             <br />
-            Will you be my valentine? :*.
+            Will you be my valentine? :*
             <br />
             <br />
           </>
